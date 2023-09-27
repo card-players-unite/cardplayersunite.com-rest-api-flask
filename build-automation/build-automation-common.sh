@@ -1,6 +1,6 @@
 
 repositoryUser="softwareshinobi"
 
-repositoryName="software-shinobi-ub555untu-linux"
+repositoryName="card-players-unite-rest-api"
 
 repositoryTag="latest"

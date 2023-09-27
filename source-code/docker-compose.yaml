@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+
+  card-players-unite-rest-api:
+
+    container_name: card-players-unite-rest-api
+
+    image: softwareshinobi/card-players-unite-rest-api
+
+    restart: unless-stopped
+
+    ports:
+
+      - "23300:3000"
+                       
+    networks:
+
+        - network-card-players-unite-rest-api
+            
+networks:
+
+    network-card-players-unite-rest-api:
+    
