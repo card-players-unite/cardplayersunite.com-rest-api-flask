@@ -18,7 +18,7 @@ pipeline {
 
             steps {
 
-                sh 'cd build-automation;./build-pass-1-build-docker-image-from-dockerfile.sh'
+                sh 'cd build-automation; bash ./build-pass-1-build-docker-image-from-dockerfile.sh'
 
             }
 
@@ -28,7 +28,7 @@ pipeline {
 
             steps {
 
-                sh 'cd build-automation;./build-pass-2-push-docker-image-to-dockerhub.sh'
+                sh 'cd build-automation; bash ./build-pass-2-push-docker-image-to-dockerhub.sh'
 
             }
 
@@ -38,7 +38,7 @@ pipeline {
 
             steps {
 
-                sh 'cd build-automation;./execute-pass-1-run-local-environment.sh'
+                sh 'cd build-automation; bash ./execute-pass-1-run-local-environment.sh'
 
             }
 
