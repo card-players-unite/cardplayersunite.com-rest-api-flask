@@ -34,7 +34,7 @@ pipeline {
 
         }   
         
-        stage('deploy the docker image to running container') {
+        stage('deploy container') {
 
             steps {
 
