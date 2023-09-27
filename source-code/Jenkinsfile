@@ -1,6 +1,6 @@
 pipeline {
  
-    agent { node { label 'telesto' } }
+    agent { node { label 'rhea' } }
 
     stages {
 
