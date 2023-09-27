@@ -1,10 +1,10 @@
 pipeline {
  
-    agent { node { label 'rhea' } }
+    agent { node { label 'telesto' } }
 
     stages {
 
-        stage('Mark build-automation scripts as executable') {
+        stage('chmod scripts') {
 
             steps {
 
@@ -14,7 +14,7 @@ pipeline {
 
         }
         
-        stage('Build docker image from Dockerfile') {
+        stage('build docker image') {
 
             steps {
 
@@ -24,7 +24,7 @@ pipeline {
 
         }
 
-        stage('Push docker image to softwareshinobi DockerHub') {
+        stage('push to dockerhub') {
 
             steps {
 
