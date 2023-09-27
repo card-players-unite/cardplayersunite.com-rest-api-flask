@@ -18,4 +18,4 @@ cd ../source-code
 
 docker-compose down --remove-orphans
 
-docker-compose up 
+docker-compose up -d
