@@ -3,7 +3,8 @@ FROM ubuntu
 
 COPY ./ ./
 
-RUN ls -lha 
+RUN ls -lha
+ 
 ## install python3
 
 RUN set -xe \
@@ -19,4 +20,4 @@ RUN set -xe \
 
 ## On Container start, run the Python API file
 
-CMD ["python3", "text-rewrite-dashboard-api.py"]
+CMD ["python3", "card-players-unite-registration-api.py"]
