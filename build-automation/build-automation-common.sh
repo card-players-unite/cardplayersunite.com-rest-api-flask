@@ -1,6 +1,6 @@
 
 repositoryUser="softwareshinobi"
 
-repositoryName="software-shinobi-ubuntu-linux"
+repositoryName="software-shinobi-ub555untu-linux"
 
 repositoryTag="latest"
