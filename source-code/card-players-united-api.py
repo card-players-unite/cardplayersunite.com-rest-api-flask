@@ -10,8 +10,6 @@ from flask_cors import CORS, cross_origin
 
 ##
 
-from utility.textoperations.RytrTextOperations import formatTextForRewrite, rewriteText
-
 ##
 
 app = Flask(__name__)
@@ -46,23 +44,6 @@ def handleHealthCheckGET():
 
 ###
 
-@app.route('/text-operations/format-text', methods=["POST"])
-@cross_origin()
-def handlePOSTFormatText():
-
-	contentToFormat = request.get_json()
-
-	print("content to format: ")
-	print(contentToFormat)
-
-	statusMessage = formatTextForRewrite(contentToFormat)
-
-	print(statusMessage)
-
-	return statusMessage
-
-###
-
 @app.route('/rewrite-text-rytr', methods=["POST"])
 @cross_origin()
 def handlePOSTRewriteTextWithRytr():
@@ -78,15 +59,6 @@ def handlePOSTRewriteTextWithRytr():
 	print("param - content: ", leftSideText)
 
 	print("sending text off to be rewritten")
-
-	rewrittenTextFromRytr = rewriteText(leftSideText)
-
-	##rewrittenTextFromRytr = "STUBBED CONTENT FROM RYTR"
-	
-	print("text rewrite completed")
-
-	print("returning: ", rewrittenTextFromRytr)
-	print("exit :: handlePOSTRewriteTextWithRytr()")
 
 	return rewrittenTextFromRytr
 
@@ -114,4 +86,4 @@ if __name__ == "__main__":
     
 	#main()
     
-	app.run(host='0.0.0.0', port=44444, debug=True)
+	app.run(host='0.0.0.0', port=8080, debug=True)

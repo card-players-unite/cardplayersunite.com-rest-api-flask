@@ -12,7 +12,7 @@ services:
 
     ports:
 
-      - "23300:3000"
+      - "23088:8080"
                        
     networks:
 
