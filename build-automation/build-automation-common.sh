@@ -1,6 +1,6 @@
 
 repositoryUser="softwareshinobi"
 
-repositoryName="card-players-unite-rest-api"
+repositoryName="card-players-united-rest-api"
 
 repositoryTag="latest"

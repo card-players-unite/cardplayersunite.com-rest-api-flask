@@ -2,11 +2,11 @@ version: '3'
 
 services:
 
-  card-players-unite-rest-api:
+  card-players-united-rest-api:
 
-    container_name: card-players-unite-rest-api
+    container_name: card-players-united-rest-api
 
-    image: softwareshinobi/card-players-unite-rest-api
+    image: softwareshinobi/card-players-united-rest-api
 
     restart: unless-stopped
 
@@ -16,9 +16,9 @@ services:
                        
     networks:
 
-        - network-card-players-unite-rest-api
+        - network-card-players-united-rest-api
             
 networks:
 
-    network-card-players-unite-rest-api:
+    network-card-players-united-rest-api:
     
