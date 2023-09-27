@@ -12,7 +12,7 @@ RUN set -xe \
     && apt-get install -y python3 \
     && apt-get install -y python3-pip
 
-## install rytr api situation
+## install flask api things
 
 RUN set -xe \
     && pip install flask \
@@ -20,4 +20,4 @@ RUN set -xe \
 
 ## On Container start, run the Python API file
 
-CMD ["python3", "card-players-unite-registration-api.py"]
+CMD ["python3", "card-players-united-api.py"]
