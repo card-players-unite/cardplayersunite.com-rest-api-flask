@@ -1,6 +1,9 @@
 
 FROM ubuntu
 
+COPY ./ ./
+
+RUN ls -lha 
 ## install python3
 
 RUN set -xe \
@@ -11,8 +14,8 @@ RUN set -xe \
 ## install rytr api situation
 
 RUN set -xe \
-    && pip install flask \
-    && pip install rytrme_api_python
+    && pip install flask
+
 
 ## On Container start, run the Python API file
 
