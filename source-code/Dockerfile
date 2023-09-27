@@ -14,8 +14,8 @@ RUN set -xe \
 ## install rytr api situation
 
 RUN set -xe \
-    && pip install flask
-
+    && pip install flask \
+    && pip install flask_cors
 
 ## On Container start, run the Python API file
 
